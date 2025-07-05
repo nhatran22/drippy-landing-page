@@ -26,10 +26,10 @@ export const Header: React.FC = () => {
                 "fixed top-0 left-0 w-full z-50 flex justify-center transition-shadow"
             )}
         >
-            <div className="max-w-[1178px] w-full bg-[#18181b]/95 backdrop-blur border-b border-transparent shadow-lg border-border rounded-full mt-4 h-[64px] px-2 sm:px-6">
-                <div className="max-w-6xl pl-12 pr-6 flex items-center h-full w-full">
+            <div className="max-w-[1178px] w-full bg-[#18181b]/95 backdrop-blur border-b border-transparent shadow-lg border-border rounded-none sm:rounded-full mt-0 sm:mt-4 h-[56px] sm:h-[64px] px-2 sm:px-6">
+                <div className="max-w-6xl pl-4 pr-4 sm:pl-12 sm:pr-6 flex items-center h-full w-full">
                     {/* Logo */}
-                    <img src={drippyIcon} />
+                    <img src={drippyIcon} className="h-8" />
                     {/* Menu */}
                     <nav className="hidden md:flex ml-8 gap-2 text-sm font-regular text-white/90">
                         <div className="relative group">
@@ -58,8 +58,8 @@ export const Header: React.FC = () => {
                         <Button className="rounded-full bg-blue-600 hover:bg-blue-700 text-white px-6 font-semibold shadow">Drip it</Button>
                     </div>
                     {/* Mobile menu */}
-                    <div className="md:hidden ml-auto flex items-center">
-                        <Button size="icon" variant="ghost" className="rounded-full text-white"><Menu size={24} /></Button>
+                    <div className="sm:hidden ml-auto flex items-center">
+                        <Button size="icon" variant="ghost" className="rounded-full text-white w-10 h-10 p-0 flex items-center justify-center"><Menu size={28} /></Button>
                     </div>
                 </div>
             </div>

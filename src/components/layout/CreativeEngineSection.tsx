@@ -59,17 +59,17 @@ const features = [
 
 export default function CreativeEngineSection() {
     return (
-        <section className="bg-[#121316] w-full py-16 px-4">
-            <div className="w-full px-4 md:px-[38px]">
-                <h2 className="text-[40px] md:text-[40px] font-semibold text-center text-white mb-[13px]">
+        <section className="bg-[#121316] w-full py-16 px-4 sm:px-0">
+            <div className="w-full px-0 sm:px-[38px]">
+                <h2 className="text-2xl sm:text-[40px] font-semibold text-center text-white mb-4 sm:mb-[13px]">
                     Your creative engine right <span className="italic">on the browser.</span>
                 </h2>
-                <h2 className="text-[18px] text-[#99999A] font-regular text-center">
+                <h2 className="text-base sm:text-[18px] text-[#99999A] font-regular text-center mb-6 sm:mb-0">
                     Enjoy the full power of 3D technology - minus the complexity
                 </h2>
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-[41px] pt-6 md:pt-10">
+                <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-[41px] pt-6 sm:pt-10">
                     {features.map((f, i) => (
-                        <div key={i} className="bg-[#191A1D] rounded-2xl p-4 md:p-7 flex flex-col items-center text-center shadow-lg border border-white/5 w-full h-[279px]">
+                        <div key={i} className="bg-[#191A1D] rounded-xl sm:rounded-2xl p-4 sm:p-7 flex flex-col items-center text-center shadow-lg border border-white/5 w-full mb-4 sm:mb-0 h-auto sm:h-[279px]">
                             <div className="flex items-center justify-center rounded-2xl bg-[#1F2023] w-14 h-14 mb-5">
                                 <img src={f.icon} className="w-7 h-7 opacity-60" />
                             </div>
